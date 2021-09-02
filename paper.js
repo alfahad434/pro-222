@@ -1,4 +1,4 @@
-class paper{
+class Paper{
     constructor(x,y,radius){
         var option = {
             isStatic:false,
@@ -6,15 +6,15 @@ class paper{
             'friction':0.5,
             'density':1.2
         }
-        this.body = Bodies.circle(x,y,radious,option);
+        this.body = Bodies.circle(x,y,radius,option);
         this.radius = radius;
         
 
-        World.add(World,this.body)
+        World.add(world,this.body)
     }
 display(){
-ellipseMode(RADIOUS);
+ellipseMode(RADIUS);
 fill("yellow")
-circle(this.body.position.x,this.body.position.y,this.radious)
+circle(this.body.position.x,this.body.position.y,this.radius)
 }
 }

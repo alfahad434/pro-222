@@ -10,7 +10,7 @@ class Dustbin{
         this.width = width;
         this.height = height;
 
-        World.add(World,this.body)
+        World.add(world,this.body)
     }
 display(){
 rectMode(CENTER)
